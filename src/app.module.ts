@@ -6,6 +6,7 @@ import { join } from 'path';
 import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ItemsModule } from './items/items.module';
+import { UsersModule } from './users/users.module';
 
 
 @Module({
@@ -30,6 +31,7 @@ import { ItemsModule } from './items/items.module';
       autoLoadEntities:true
     }),
     ItemsModule,
+    UsersModule,
   
   ],
   controllers: [],
